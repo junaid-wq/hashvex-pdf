@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05060A"/>
+      <stop offset="100%" stop-color="#0F1322"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="#0B0E17" stroke="#22293F" stroke-width="2"/>
+  <rect x="110" y="118" width="260" height="44" rx="10" fill="#161B2E" stroke="#3B82F6" stroke-opacity="0.4"/>
+  <text x="130" y="146" fill="#38BDF8" font-family="system-ui,Segoe UI,sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">HASHVEX PDF</text>
+  <text x="110" y="250" fill="#F8FAFC" font-family="system-ui,Segoe UI,sans-serif" font-size="56" font-weight="800">Compress PDF to Exact KB</text>
+  <text x="110" y="318" fill="#94A3B8" font-family="system-ui,Segoe UI,sans-serif" font-size="30">100% Browser-Based • Zero Server Uploads • Instant &amp; Free</text>
+  <rect x="110" y="385" width="320" height="6" rx="3" fill="url(#accent)"/>
+  <text x="110" y="475" fill="#CBD5E1" font-family="system-ui,Segoe UI,sans-serif" font-size="24">pdf.hashvex.tech  •  50KB  •  100KB  •  200KB  •  500KB  •  1MB</text>
+</svg>

@@ -121,7 +121,40 @@ function renderHtml(page, pageMap, assets) {
   ${buildJsonLd(page)}
   ${assets.cssLinks}
   <!-- CLOUDFLARE WEB ANALYTICS PLACEHOLDER: Paste Cloudflare Web Analytics <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN"}'></script> here -->
-</head>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Mohammad Junaid" />
+    <meta name="application-name" content="Hashvex PDF" />
+    <meta name="theme-color" content="#05060A" />
+    <meta property="og:site_name" content="Hashvex PDF" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://pdf.hashvex.tech/og-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(page.title)}" />
+    <meta name="twitter:description" content="${escapeHtml(page.metaDescription)}" />
+    <meta name="twitter:image" content="https://pdf.hashvex.tech/og-card.svg" />
+    <script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Hashvex Tech", "item": "https://hashvex.tech/" },
+        { "@type": "ListItem", "position": 2, "name": "Compress PDF", "item": "https://pdf.hashvex.tech/" },
+        ...(page.slug ? [{ "@type": "ListItem", "position": 3, "name": page.h1, "item": canonicalUrl }] : [])
+      ]
+    })}</script>
+    <script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": page.h1,
+      "description": page.metaDescription,
+      "totalTime": "PT10S",
+      "tool": [{ "@type": "HowToTool", "name": "Hashvex PDF Browser Compressor" }],
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Select your PDF", "text": "Drop or choose your PDF document in Hashvex PDF. Processing happens 100% locally in your browser." },
+        { "@type": "HowToStep", "position": 2, "name": "Set exact KB or MB target", "text": "Enter your required maximum file size in KB or MB (such as 100 KB, 200 KB, or 1 MB)." },
+        { "@type": "HowToStep", "position": 3, "name": "Download compressed PDF", "text": "Click Compress PDF and immediately download your reduced PDF file with zero server upload." }
+      ]
+    })}</script>
+  </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -214,7 +247,7 @@ async function run() {
       '',
       '## Ecosystem',
       '- Main Hub: [Hashvex Tech](https://hashvex.tech)',
-      '- Related Tools: [Hashvex Hash Studio](https://hash.hashvex.tech), [SyntraForge Media Suite](https://syntraforge.me), [Skewlux Telemetry Lab](https://skewlux.dev)'
+      '- Related Tools: [Hashvex Hash Studio](https://hashvex.tech), [SyntraForge Media Suite](https://syntraforge.me), [Skewlux Telemetry Lab](https://skewlux.dev)'
     ].join('\n') + '\n';
     fs.writeFileSync(path.join(DIST_DIR, 'llms.txt'), llmsTxt, 'utf8');
 
