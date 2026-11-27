@@ -147,7 +147,6 @@ function renderHtml(page, pageMap, assets) {
     ${toolMount}
 
     <!-- AD SLOT TOP: Reserved layout-stable banner slot (min-height: 100px). Paste Google AdSense <ins> unit here. -->
-    <aside class="ad-slot" aria-label="Advertisement Slot">Advertisement</aside>
 
     <article class="content-section">
       ${page.bodyHtml}
@@ -158,7 +157,6 @@ function renderHtml(page, pageMap, assets) {
     ${faqSection}
 
     <!-- AD SLOT BOTTOM: Reserved layout-stable banner slot (min-height: 100px). Paste Google AdSense <ins> unit here. -->
-    <aside class="ad-slot" aria-label="Advertisement Slot">Advertisement</aside>
   </main>
 
   <footer class="site-footer">
