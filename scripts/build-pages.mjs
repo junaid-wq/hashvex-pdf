@@ -68,8 +68,7 @@ function renderHtml(page, pageMap, assets) {
       </section>`
     : '';
 
-  const relatedLinksHtml = page.relatedSlugs
-    .map((s) => pageMap.get(s))
+  const relatedLinksHtml = (page.relatedSlugs || []).map((s) => pageMap.get(s))
     .filter(Boolean)
     .map((p) => `<a class="pill-link" href="/${p.slug}">${escapeHtml(p.h1)}</a>`)
     .join('\n          ');
@@ -138,7 +137,7 @@ function renderHtml(page, pageMap, assets) {
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Hashvex Tech", "item": "https://hashvex.tech/" },
         { "@type": "ListItem", "position": 2, "name": "Compress PDF", "item": "https://pdf.hashvex.tech/" },
-        ...(page.slug ? [{ "@type": "ListItem", "position": 3, "name": page.h1, "item": canonicalUrl }] : [])
+        ...(page.slug ? [{ "@type": "ListItem", "position": 3, "name": page.h1, "item": pageUrl(page.slug) }] : [])
       ]
     })}</script>
     <script type="application/ld+json">${JSON.stringify({
