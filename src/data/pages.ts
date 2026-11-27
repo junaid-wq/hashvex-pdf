@@ -502,6 +502,222 @@ export const PAGES: PageConfig[] = [
       <p><em>Note: Please do not email sensitive personal documents—Hashvex PDF runs locally in your browser so you never need to send files to us.</em></p>
     `
   }
+  ,{
+    slug: "compress-pdf-for-uscis",
+    title: "Compress PDF for USCIS Online Filing (Under 12 MB) — Hashvex PDF",
+    metaDescription: "Shrink immigration evidence, forms, and translations under USCIS's strict 12 MB file limit locally in your browser. Zero server uploads for sensitive A-Number documents.",
+    h1: "Compress PDF for USCIS Online Filing (Under 12 MB)",
+    subtitle: "Meet myUSCIS 12 MB per-file evidence limits without uploading sensitive immigration records, passports, or translations to cloud servers.",
+    targetValue: 11500,
+    targetUnit: "KB",
+    badge: "USCIS • 12 MB Limit",
+    summary: "USCIS online filing requires unencrypted PDFs under 12 MB per file with readable stamps and certified translations. Hashvex PDF compresses multi-page immigration packets locally in your browser so sensitive personal records never leave your device.",
+    faqs: [
+      {
+        question: "What is the maximum PDF file size for USCIS online filing?",
+        answer: "USCIS online accounts allow up to 12 MB per uploaded evidence file in PDF, JPG, JPEG, or TIF/TIFF format. Setting a target around 11.5 MB (11,500 KB) ensures your file stays safely below the 12 MB cap."
+      },
+      {
+        question: "Can I upload password-protected PDFs to USCIS?",
+        answer: "No. USCIS rejects encrypted or password-protected PDFs. Unlock bank statements or tax transcripts before compressing and uploading."
+      },
+      {
+        question: "Is it safe to compress USCIS immigration documents online?",
+        answer: "Yes on Hashvex PDF because all compression runs 100% locally in your browser using WebAssembly/JavaScript—your passport scans, A-Numbers, and translations are never transmitted to any server."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-nvc-ceac",
+    title: "Compress PDF for NVC CEAC Portal (Under 2 MB) — Hashvex PDF",
+    metaDescription: "Compress civil documents, Affidavit of Support (I-864), and tax transcripts under the NVC CEAC 2 MB PDF limit locally in your browser with zero uploads.",
+    h1: "Compress PDF for NVC CEAC Portal (Under 2 MB)",
+    subtitle: "Fit multi-page civil documents, marriage certificates, and I-864 financial packets under the State Department CEAC 2 MB cap.",
+    targetValue: 1900,
+    targetUnit: "KB",
+    badge: "NVC / CEAC • 2 MB Limit",
+    summary: "The Consular Electronic Application Center (CEAC) enforces a strict 2 MB limit per single un-zipped PDF file. Hashvex PDF compresses multi-page visa scans locally at 150 DPI legibility while keeping seals and signatures sharp.",
+    faqs: [
+      {
+        question: "What is the NVC CEAC file size limit for scanned PDFs?",
+        answer: "Each individual document uploaded to CEAC must be 2 MB or smaller in a single un-zipped, unencrypted PDF or JPG file. Targeting 1,900 KB avoids binary/decimal size rejections."
+      },
+      {
+        question: "Can I split a large document into multiple files for CEAC?",
+        answer: "No. The National Visa Center requires multi-page documents—including original documents paired with certified English translations—to be combined into one single PDF under 2 MB."
+      },
+      {
+        question: "Should NVC civil documents be scanned in color or grayscale?",
+        answer: "Keep color enabled if your birth certificate, police clearance, or passport has colored stamps or seals; only check Grayscale if the file still exceeds 2 MB."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-common-app",
+    title: "Compress PDF for Common App (Under 2,000 KB / 2 MB) — Hashvex PDF",
+    metaDescription: "Shrink SAT/ACT score reports, high school transcripts, and portfolios under Common App's 2,000 KB PDF upload limit locally in seconds.",
+    h1: "Compress PDF for Common App (Under 2,000 KB)",
+    subtitle: "Reduce College Board score reports, transcripts, and counselor PDFs below Common App's 2,000 KB limit with crisp vector text.",
+    targetValue: 1950,
+    targetUnit: "KB",
+    badge: "Common App • 2,000 KB",
+    summary: "Common App enforces a strict 2,000 KB (2 MB) ceiling on uploaded score reports and supporting PDFs. Hashvex PDF first strips bloated PDF metadata losslessly before rasterizing, keeping transcript text sharp.",
+    faqs: [
+      {
+        question: "Why does Common App reject my SAT score report PDF?",
+        answer: "Official score reports downloaded from College Board frequently exceed Common App's 2,000 KB upload limit. Compressing to 1,950 KB fixes the upload error immediately."
+      },
+      {
+        question: "Will my transcript text stay selectable and clear?",
+        answer: "Yes. Step A of Hashvex PDF rewrites compressed object streams without touching fonts or vector text, often shrinking transcripts under 2,000 KB with zero visual change."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-irs",
+    title: "Compress PDF for IRS Document Upload Tool (Under 15 MB) — Hashvex PDF",
+    metaDescription: "Compress tax notice responses, Forms 2848/8821, and supporting receipts under the IRS 15 MB PDF limit locally on your device—zero cloud upload.",
+    h1: "Compress PDF for IRS Document Upload Tool (Under 15 MB)",
+    subtitle: "Keep SSNs, EINs, and tax notice responses 100% off external servers while shrinking scans under the 15 MB IRS limit.",
+    targetValue: 14500,
+    targetUnit: "KB",
+    badge: "IRS Upload Tool • 15 MB",
+    summary: "The IRS Document Upload Tool accepts PDFs up to 15 MB per file (up to 40 files per submission). Because tax documents contain SSNs and financial records, Hashvex PDF processes everything locally in browser memory.",
+    faqs: [
+      {
+        question: "What is the file size limit for the IRS Document Upload Tool?",
+        answer: "The IRS Document Upload Tool supports JPG, PNG, and PDF files up to 15 MB per file, with a maximum of 40 files per upload session."
+      },
+      {
+        question: "Are my tax documents uploaded to Hashvex servers?",
+        answer: "Never. All PDF compression happens strictly inside your local browser tab, protecting Social Security Numbers, EINs, and bank statements."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-court-efiling",
+    title: "Compress PDF for Court E-Filing (Under 25 MB) — Hashvex PDF",
+    metaDescription: "Reduce legal briefs, exhibits, and scanned pleadings under 25 MB court e-filing limits locally in your browser—maintaining attorney-client confidentiality.",
+    h1: "Compress PDF for Court E-Filing (Under 25 MB)",
+    subtitle: "Shrink multi-page exhibits and filings below 25 MB state and federal court limits without exposing privileged files to third-party servers.",
+    targetValue: 24000,
+    targetUnit: "KB",
+    badge: "Legal E-Filing • 25 MB",
+    summary: "Most state and federal court e-filing portals enforce a 25 MB per-document ceiling. Hashvex PDF reduces scanned exhibits locally in your browser so confidential client filings never leave your workstation.",
+    faqs: [
+      {
+        question: "What is the standard PDF size limit for US court e-filing portals?",
+        answer: "Most state e-filing systems (such as eFileCA, Tyler Odyssey) and federal CM/ECF portals cap individual PDF documents at 25 MB to 35 MB. Targeting 24 MB ensures smooth submission."
+      },
+      {
+        question: "Does local compression preserve attorney-client confidentiality?",
+        answer: "Yes. Unlike cloud PDF tools that upload pleadings to remote servers, Hashvex PDF runs 100% client-side in your browser."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-ssc",
+    title: "Compress PDF to 100 KB for SSC CGL, CHSL & MTS — Hashvex PDF",
+    metaDescription: "Compress caste, EWS, PwBD, and educational certificates under 100 KB for SSC online portals locally in your browser with clear roll numbers and stamps.",
+    h1: "Compress PDF to 100 KB for SSC Portals",
+    subtitle: "Hit strict 100 KB SSC certificate limits without blurring registration numbers, dates, or issuing authority seals.",
+    targetValue: 95,
+    targetUnit: "KB",
+    badge: "SSC Exams • 100 KB Limit",
+    summary: "Staff Selection Commission (SSC) portals frequently cap supporting certificate PDFs at 100 KB. Hashvex PDF uses binary-search quality tuning (and optional Grayscale) to fit scans cleanly under 100 KB.",
+    faqs: [
+      {
+        question: "How do I compress a certificate PDF under 100 KB for SSC?",
+        answer: "Select your certificate PDF, leave the target at 95 KB (safely under 100 KB), and enable Grayscale if it is a multi-page or heavy color scan. Download and verify all text is legible."
+      },
+      {
+        question: "Why should I set 95 KB instead of 100 KB for SSC?",
+        answer: "Government portals validate size in binary bytes (100 KiB = 102,400 bytes), whereas Windows/macOS often show decimal KB. Targeting 95 KB prevents borderline byte rejections."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-upsc",
+    title: "Compress PDF to 300 KB / 200 KB for UPSC OTR & CSE — Hashvex PDF",
+    metaDescription: "Compress UPSC OTR photo ID, matriculation, and caste/EWS certificate PDFs between 20 KB and 300 KB locally in your browser—100% private.",
+    h1: "Compress PDF for UPSC OTR & Certificate Upload (Under 300 KB)",
+    subtitle: "Keep UPSC identity proofs and certificates within the strict 20 KB–300 KB window without uploading Aadhaar or PAN to external servers.",
+    targetValue: 250,
+    targetUnit: "KB",
+    badge: "UPSC OTR • 20–300 KB",
+    summary: "UPSC OTR and DAF portals require scanned PDF certificates and photo IDs between 20 KB and 300 KB. Hashvex PDF targets 250 KB locally so your file passes both decimal and binary byte checks.",
+    faqs: [
+      {
+        question: "What is the UPSC PDF upload size limit for OTR and certificates?",
+        answer: "UPSC specifies 20 KB to 300 KB for PDF documents such as caste, PwBD, matriculation certificates, and photo ID proofs. Compressing to 250 KB keeps you safely inside the allowed window."
+      },
+      {
+        question: "Can I compress a password-protected e-Aadhaar PDF for UPSC?",
+        answer: "Remove the PDF password first (using Print to PDF or an unlocker) because UPSC rejects encrypted PDFs, then compress the unlocked PDF to 250 KB here."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-passport-seva",
+    title: "Compress PDF to 300 KB for Passport Seva Portal — Hashvex PDF",
+    metaDescription: "Shrink self-attested address proof, birth certificate, and annexure PDFs under 300 KB for Indian Passport Seva locally in your browser.",
+    h1: "Compress PDF for Passport Seva Online Upload (Under 300 KB)",
+    subtitle: "Prepare crisp, self-attested address and date-of-birth proof PDFs under 300 KB without exposing personal IDs to cloud servers.",
+    targetValue: 280,
+    targetUnit: "KB",
+    badge: "Passport Seva • 300 KB",
+    summary: "Passport Seva online document uploads require clear scans under 300 KB. Hashvex PDF compresses multi-page utility bills, bank statements, and marksheets locally on your phone or laptop.",
+    faqs: [
+      {
+        question: "What is the maximum file size for Passport Seva document uploads?",
+        answer: "Supporting documents uploaded on the Passport Seva portal must generally be under 300 KB with clearly readable text, stamps, and self-attestation signatures."
+      },
+      {
+        question: "Should I self-attest before scanning and compressing?",
+        answer: "Yes. Sign and write 'Self-Attested' on the physical photocopy first, scan or photograph it cleanly, convert to PDF, and compress to 280 KB."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-gate-neet",
+    title: "Compress PDF to 200 KB for GATE, JEE & NEET Forms — Hashvex PDF",
+    metaDescription: "Compress category, EWS, PwD, and marksheet PDFs under 200 KB (or 300 KB) for GATE, JoSAA JEE, and NEET UG portals locally in your browser.",
+    h1: "Compress PDF for GATE, JEE & NEET Application Portals (Under 200 KB)",
+    subtitle: "Fit category certificates, PwD forms, and Class 10/12 marksheets under strict 200 KB entrance exam limits in one click.",
+    targetValue: 190,
+    targetUnit: "KB",
+    badge: "GATE / NEET / JEE • 200 KB",
+    summary: "NTA (NEET/JEE) and GATE portals typically cap category and PwD certificate PDFs between 50 KB and 300 KB (most commonly 200 KB). Hashvex PDF hits 190 KB locally while keeping QR codes and certificate numbers scannable.",
+    faqs: [
+      {
+        question: "What PDF size is required for GATE and NEET certificate uploads?",
+        answer: "Most GATE, NEET UG, and JoSAA counseling portals require certificate PDFs between 50 KB and 200 KB (or up to 300 KB depending on the brochure). Targeting 190 KB satisfies 200 KB limits cleanly."
+      },
+      {
+        question: "Will QR codes and barcodes on my digital certificate stay readable?",
+        answer: "Yes. Our binary search picks the highest resolution scale (up to 150%) that fits under your KB cap so QR codes and serial numbers remain crisp."
+      }
+    ]
+  },
+  {
+    slug: "compress-pdf-for-aadhaar-kyc",
+    title: "Compress PDF to 100 KB for Aadhaar, PAN & Bank KYC — Hashvex PDF",
+    metaDescription: "Compress Aadhaar, PAN, and e-District KYC PDFs under 100 KB 100% locally in your browser—zero server upload to protect your identity.",
+    h1: "Compress PDF for Aadhaar, PAN & Bank KYC (Under 100 KB)",
+    subtitle: "Protect your Aadhaar and PAN from cloud leaks—compress KYC documents under 100 KB entirely inside your device's browser.",
+    targetValue: 95,
+    targetUnit: "KB",
+    badge: "Zero-Upload KYC • 100 KB",
+    summary: "Uploading Aadhaar, PAN, or bank statements to random cloud compressors exposes sensitive identity data. Hashvex PDF compresses KYC PDFs under 100 KB 100% offline-capable inside your browser.",
+    faqs: [
+      {
+        question: "Why is browser-based compression safer for Aadhaar and PAN PDFs?",
+        answer: "Cloud PDF tools transmit your document to external servers. Hashvex PDF executes all compression in your browser's local RAM—zero bytes of your ID ever touch a network server."
+      },
+      {
+        question: "How do I fit front-and-back ID scans under 100 KB?",
+        answer: "Set the target to 95 KB and check Grayscale (smaller output). Hashvex PDF automatically scales both pages so names, DOB, and ID numbers stay legible."
+      }
+    ]
+  }
 ];
-
-export const PAGE_MAP = new Map<string, PageConfig>(PAGES.map((p) => [p.slug, p]));
